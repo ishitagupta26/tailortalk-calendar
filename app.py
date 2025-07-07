@@ -2,6 +2,8 @@ import streamlit as st
 from calendar_agent import run_calendar_agent
 from dotenv import load_dotenv
 import os
+print("LOADED CLIENT EMAIL:", os.environ.get("client_email"))
+
 
 # Load environment variables from .env file
 load_dotenv()
