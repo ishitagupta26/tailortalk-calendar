@@ -3,7 +3,6 @@
 import os
 import re
 from datetime import datetime, timedelta
-from dotenv import load_dotenv
 from google.oauth2 import service_account
 from googleapiclient.discovery import build
 import pytz
@@ -12,7 +11,7 @@ from langchain.agents.agent_types import AgentType
 from langchain_openai import ChatOpenAI
 
 # Load environment variables
-load_dotenv()
+
 
 # Google Calendar API setup
 service_account_info = {
