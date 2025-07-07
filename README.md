@@ -2,7 +2,10 @@
 
 The TailorTalk Calendar Assistant is an intelligent conversational agent that allows users to book Google Calendar events using natural language. It leverages Streamlit for the chat UI, LangChain for tool-based agent logic, and OpenRouter's LLMs for interpreting user queries.
 
+# Live Demo  
+👉 [Try the App on Render](https://tailortalk-calendar.onrender.com)
 
+---
 # Features
 - Book meetings via natural language
 - Powered by LangChain ReAct agent + OpenRouter LLM
