@@ -5,6 +5,9 @@ The TailorTalk Calendar Assistant is an intelligent conversational agent that al
 # Live Demo  
 👉 [Try the App on Render](https://tailortalk-calendar.onrender.com)
 
+local url 
+http://localhost:8501/
+
 ---
 # Features
 - Book meetings via natural language
