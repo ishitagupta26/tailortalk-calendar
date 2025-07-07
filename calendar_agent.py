@@ -15,7 +15,7 @@ from langchain_openai import ChatOpenAI
 load_dotenv()
 
 # Google Calendar API setup
-SERVICE_ACCOUNT_FILE = "calendar-service-account.json"
+SERVICE_ACCOUNT_FILE = os.path.join(os.getcwd(), 'calendar-service-account.json')
 SCOPES = ['https://www.googleapis.com/auth/calendar']
 CALENDAR_ID = 'c84a668e0342524fd101cf6f89513ef89194cadaf8bf2c66f314204f250151d6@group.calendar.google.com'
 
