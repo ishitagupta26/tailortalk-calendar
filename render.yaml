@@ -1,13 +1,16 @@
 services:
   - type: web
-    name: tailor-talk-calendar
-    env: python
-    buildCommand: ""
-    startCommand: streamlit run app.py
+    name: tailortalk-calendar
+    runtime: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "streamlit run app.py"
     envVars:
       - key: OPENAI_API_KEY
-        value: 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
-      - key: OPENAI_API_BASE
-        value: https://openrouter.ai/api/v1
+        fromEnvVar: OPENAI_API_KEY
       - key: OPENAI_MODEL_NAME
-        value: mistralai/mistral-7b-instruct
+        fromEnvVar: OPENAI_MODEL_NAME
+      - key: OPENAI_API_BASE
+        fromEnvVar: OPENAI_API_BASE
+    secretFiles:
+      - source: calendar-service-account.json
+        target: /etc/secrets/calendar-service-account.json
